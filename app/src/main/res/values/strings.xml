@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Droit</string>
+    <string name="commencer"> Commencer </string>
+    <string name="question1"> Ivresse au volant ? </string>
+    <string name="question2"> Es-tu en péride probatoire ? </string>
+    <string name="question3"> Quel taux d\'alcoolémie ? </string>
+    <string name="question4"> Es-tu en récidive ? </string>
+    <string name="tauxEntre"> Entre 0,5 et 0,8 g/L </string>
+    <string name="tauxSup"> Supérieur 0,8 g/L </string>
+    <string name="oui"> Oui </string>
+    <string name="non"> Non </string>
 </resources>

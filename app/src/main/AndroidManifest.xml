@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Droit">
+        <activity android:name=".RecidiveActivity"></activity>
+        <activity android:name=".TauxActivity" />
+        <activity android:name=".PeriodeProbatoireActivity" />
+        <activity android:name=".IvresseActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
