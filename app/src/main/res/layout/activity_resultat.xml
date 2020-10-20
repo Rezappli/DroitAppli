@@ -13,13 +13,16 @@
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="@string/resultat"
             android:textSize="36sp" />
@@ -27,7 +30,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp">
 
@@ -42,7 +47,6 @@
                     android:id="@+id/information1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="40dp"
                     android:drawableStart="@drawable/ic_round_warning_24"
                     android:drawablePadding="10dp"
                     android:text="TextView" />
@@ -51,7 +55,7 @@
                     android:id="@+id/information2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="40dp"
                     android:drawableStart="@drawable/ic_round_warning_24"
                     android:drawablePadding="10dp"
                     android:text="TextView" />
@@ -60,7 +64,7 @@
                     android:id="@+id/information3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="40dp"
                     android:drawableStart="@drawable/ic_round_warning_24"
                     android:drawablePadding="10dp"
                     android:text="TextView" />
@@ -69,7 +73,7 @@
                     android:id="@+id/information4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="40dp"
                     android:drawableStart="@drawable/ic_round_warning_24"
                     android:drawablePadding="10dp"
                     android:text="TextView" />
@@ -78,28 +82,30 @@
                     android:id="@+id/information5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
                     android:drawableStart="@drawable/ic_round_warning_24"
                     android:drawablePadding="10dp"
                     android:text="TextView" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/custom_button"
-            android:text="@string/reesaye"
-            android:textColor="@color/white"
-            app:backgroundTint="@drawable/custom_button" />
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="3dp">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/custom_button_cancel"
-            android:text="Quitter"
-            app:backgroundTint="@drawable/custom_button_cancel" />
+            <ImageView
+                android:id="@+id/buttonRecommencer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/ic_baseline_refresh_24" />
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

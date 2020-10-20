@@ -17,9 +17,8 @@ public class PeriodeProbatoireActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_periode_probatoire);
 
-
-        validate = (Button)findViewById(R.id.ivresse_yes_button);
-        refuse = (Button)findViewById(R.id.ivresse_no_button);
+        validate = (Button)findViewById(R.id.periode_prob_yes_button);
+        refuse = (Button)findViewById(R.id.periode_prob_no_button);
         Intent taux_page = new Intent(this, TauxActivity.class);
         Intent result_page = new Intent(this, ResultatActivity.class);
 
@@ -33,14 +32,12 @@ public class PeriodeProbatoireActivity extends AppCompatActivity {
         refuse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle allInforesult = new Bundle();
-                allInforesult.putString("info1","Retrait de 6 points donc suspension ou annulation du permis");
-                allInforesult.putString("info2","Amende de 750€ maximum");
-                allInforesult.putString("info3","Immobilisation du véhicule");
-                allInforesult.putString("info4","none");
-                allInforesult.putString("info5","none");
+                ResultatActivity.StringInfo1 = "Retrait de 6 points donc suspension du permis ou annulation du permis";
+                ResultatActivity.StringInfo2 = "Amende de 750€ maximum";
+                ResultatActivity.StringInfo3 = "Immobilisation du véhicule";
+                ResultatActivity.StringInfo4 = "";
+                ResultatActivity.StringInfo5 = "";
 
-                result_page.putExtra("infoResult",allInforesult);
                 startActivity(result_page);
             }
         });

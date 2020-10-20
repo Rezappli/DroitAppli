@@ -18,8 +18,6 @@ public class RecidiveActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recidive);
 
-
-
         validate = (Button)findViewById(R.id.recidive_yes_button);
         refuse = (Button)findViewById(R.id.recidive_no_button);
         Intent validate_result_page = new Intent(this, ResultatActivity.class);
@@ -28,13 +26,11 @@ public class RecidiveActivity extends AppCompatActivity {
         validate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle allInforesult = new Bundle();
-                allInforesult.putString("info1","Retrait de 6 points donc suspension ou annulation du permis");
-                allInforesult.putString("info2","Amende de 9 000€ maximum");
-                allInforesult.putString("info3","Immobilisation du véhicule");
-                allInforesult.putString("info4","Obligation de suivre un stage de sensibilisation");
-                allInforesult.putString("info5","Peine de prison de 4 ans maximum");
-                validate_result_page.putExtra("infoResult",allInforesult);
+                ResultatActivity.StringInfo1 = "Retrait de 6 points donc suspension du permis ou annulation du permis";
+                ResultatActivity.StringInfo2 = "Amende de 9 000€ maximum";
+                ResultatActivity.StringInfo3 = "Immobilisation du véhicule";
+                ResultatActivity.StringInfo4 = "Obligation de suivre un stage de sensibilisation";
+                ResultatActivity.StringInfo5 = "Peine de prison de 4 ans maximum";
 
                 startActivity(validate_result_page);
             }
@@ -43,13 +39,11 @@ public class RecidiveActivity extends AppCompatActivity {
         refuse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle allInforesult = new Bundle();
-                allInforesult.putString("info1","Retrait de 6 points donc suspension ou annulation du permis");
-                allInforesult.putString("info2","Amende de 4 500€ maximum");
-                allInforesult.putString("info3","Immobilisation du véhicule");
-                allInforesult.putString("info4","Obligation de suivre un stage de sensibilisation");
-                allInforesult.putString("info5","Peine de prison de 2 ans maximum");
-                refuse_result_page.putExtra("infoResult",allInforesult);
+                ResultatActivity.StringInfo1 = "Retrait de 6 points donc suspension du permis ou annulation du permis";
+                ResultatActivity.StringInfo2 = "Amende de 4 500€ maximum";
+                ResultatActivity.StringInfo3 = "Immobilisation du véhicule";
+                ResultatActivity.StringInfo4 = "Obligation de suivre un stage de sensibilisation";
+                ResultatActivity.StringInfo5 = "Peine de prison de 2 ans maximum";
                 startActivity(refuse_result_page);
             }
         });

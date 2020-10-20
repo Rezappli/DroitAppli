@@ -32,13 +32,11 @@ public class IvresseActivity extends AppCompatActivity {
         refuse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle allInforesult = new Bundle();
-                allInforesult.putString("info1","Tu n'es pas concerné(e)");
-                allInforesult.putString("info2","none");
-                allInforesult.putString("info3","none");
-                allInforesult.putString("info4","none");
-                allInforesult.putString("info5","none");
-                result_page.putExtra("infoResult",allInforesult);
+                ResultatActivity.StringInfo1 = "Tu n'es pas concerné :)";
+                ResultatActivity.StringInfo2 = "";
+                ResultatActivity.StringInfo3 = "";
+                ResultatActivity.StringInfo4 = "";
+                ResultatActivity.StringInfo5 = "";
                 startActivity(result_page);
             }
         });
