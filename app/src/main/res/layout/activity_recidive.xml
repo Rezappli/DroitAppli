@@ -48,7 +48,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/taux1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
@@ -56,7 +56,7 @@
                 android:text="@string/oui" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/taux2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"

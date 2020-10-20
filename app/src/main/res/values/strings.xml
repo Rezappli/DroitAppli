@@ -9,4 +9,6 @@
     <string name="tauxSup"> Supérieur 0,8 g/L </string>
     <string name="oui"> Oui </string>
     <string name="non"> Non </string>
+    <string name="resultat"> Resultat </string>
+    <string name="reesaye"> Réessayer </string>
 </resources>
