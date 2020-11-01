@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Droit</string>
+    <string name="app_title">Simulation de droit pénale</string>
+    <string name="disclaimer">avertissement jeu éducatif</string>
+
     <string name="commencer"> Commencer </string>
     <string name="question1"> Ivresse au volant ? </string>
     <string name="question2"> Es-tu en péride probatoire ? </string>
